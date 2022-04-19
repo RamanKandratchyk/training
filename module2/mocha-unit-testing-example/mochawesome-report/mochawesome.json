@@ -5,9 +5,9 @@
     "passes": 10,
     "pending": 0,
     "failures": 0,
-    "start": "2022-04-19T18:57:39.933Z",
-    "end": "2022-04-19T18:57:39.952Z",
-    "duration": 19,
+    "start": "2022-04-19T19:11:40.955Z",
+    "end": "2022-04-19T19:11:40.985Z",
+    "duration": 30,
     "testsRegistered": 10,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "01edb65c-bb1b-44f7-9283-1861e5beac80",
+      "uuid": "a01ec220-4ebd-4801-b94d-997670a0da65",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "68d74884-bd56-4a41-bd79-5f4cf141afa5",
+          "uuid": "9201c581-b3ae-4512-92d4-25d8c8b76087",
           "title": "factorialShort",
           "fullFile": "c:\\data\\training\\module2\\mocha-unit-testing-example\\test\\specs\\factorialShort.spec.js",
           "file": "\\test\\specs\\factorialShort.spec.js",
@@ -45,8 +45,8 @@
               "context": null,
               "code": "factorial = new Factorial();\nspy = chai.spy.on(factorial, 'factorialShort');",
               "err": {},
-              "uuid": "e7e90866-bfd7-456e-a281-86978926be90",
-              "parentUUID": "68d74884-bd56-4a41-bd79-5f4cf141afa5",
+              "uuid": "f58f09d7-0f85-4602-a236-113d57d458b7",
+              "parentUUID": "9201c581-b3ae-4512-92d4-25d8c8b76087",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "factorial = null;",
               "err": {},
-              "uuid": "ebda6bc6-09ac-4f5d-a7fa-e315965f6ea6",
-              "parentUUID": "68d74884-bd56-4a41-bd79-5f4cf141afa5",
+              "uuid": "da4c0e60-24c6-45e6-aed9-768ea4724286",
+              "parentUUID": "9201c581-b3ae-4512-92d4-25d8c8b76087",
               "isHook": true,
               "skipped": false
             }
@@ -85,8 +85,8 @@
               "context": null,
               "code": "expect(factorial.factorialShort(3)).to.be.equal(6);",
               "err": {},
-              "uuid": "a3263b4b-9637-4fed-977f-6bf939ad7c41",
-              "parentUUID": "68d74884-bd56-4a41-bd79-5f4cf141afa5",
+              "uuid": "5a86d205-b0c1-40ec-b55b-1769a48eb406",
+              "parentUUID": "9201c581-b3ae-4512-92d4-25d8c8b76087",
               "isHook": false,
               "skipped": false
             },
@@ -94,7 +94,7 @@
               "title": "should return 362880 when called with number 9",
               "fullTitle": "factorialShort should return 362880 when called with number 9",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -103,8 +103,8 @@
               "context": null,
               "code": "expect(factorial.factorialShort(9)).to.be.equal(362880);",
               "err": {},
-              "uuid": "cff734e8-e466-4db7-96d1-eb745e1d1dcc",
-              "parentUUID": "68d74884-bd56-4a41-bd79-5f4cf141afa5",
+              "uuid": "b0087076-caab-4e1e-b8b0-1c8fa1a5793e",
+              "parentUUID": "9201c581-b3ae-4512-92d4-25d8c8b76087",
               "isHook": false,
               "skipped": false
             },
@@ -121,8 +121,8 @@
               "context": null,
               "code": "let callWithError = () => factorial.factorialShort(-1);\nexpect(spy).to.be.a.spy;\nexpect(callWithError).to.throw(`Negative number!`);",
               "err": {},
-              "uuid": "6c2b1e2b-9ca4-4111-9825-10b8d65927d7",
-              "parentUUID": "68d74884-bd56-4a41-bd79-5f4cf141afa5",
+              "uuid": "30d7a8da-84c2-4e2f-b01e-50311301b0c6",
+              "parentUUID": "9201c581-b3ae-4512-92d4-25d8c8b76087",
               "isHook": false,
               "skipped": false
             },
@@ -139,8 +139,8 @@
               "context": null,
               "code": "factorial.factorialShort(2);\nexpect(spy).to.have.been.called(2);",
               "err": {},
-              "uuid": "2674c850-eb43-4a46-bcd2-721f7bc8f8a0",
-              "parentUUID": "68d74884-bd56-4a41-bd79-5f4cf141afa5",
+              "uuid": "399a4b58-7f3c-4ad8-81d9-c78dca937415",
+              "parentUUID": "9201c581-b3ae-4512-92d4-25d8c8b76087",
               "isHook": false,
               "skipped": false
             },
@@ -157,30 +157,30 @@
               "context": null,
               "code": "expect(factorial.factorialShort(1)).to.be.equal(1);",
               "err": {},
-              "uuid": "35e80855-f23a-4be5-9c92-473dd7a89830",
-              "parentUUID": "68d74884-bd56-4a41-bd79-5f4cf141afa5",
+              "uuid": "53c442fb-dfe9-45df-904b-31c321083c80",
+              "parentUUID": "9201c581-b3ae-4512-92d4-25d8c8b76087",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a3263b4b-9637-4fed-977f-6bf939ad7c41",
-            "cff734e8-e466-4db7-96d1-eb745e1d1dcc",
-            "6c2b1e2b-9ca4-4111-9825-10b8d65927d7",
-            "2674c850-eb43-4a46-bcd2-721f7bc8f8a0",
-            "35e80855-f23a-4be5-9c92-473dd7a89830"
+            "5a86d205-b0c1-40ec-b55b-1769a48eb406",
+            "b0087076-caab-4e1e-b8b0-1c8fa1a5793e",
+            "30d7a8da-84c2-4e2f-b01e-50311301b0c6",
+            "399a4b58-7f3c-4ad8-81d9-c78dca937415",
+            "53c442fb-dfe9-45df-904b-31c321083c80"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3,
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 5000
         },
         {
-          "uuid": "70ab3be3-7580-4ae7-9e8b-22d7efd2e327",
+          "uuid": "f7737ef5-a497-4532-9888-1b3f4ea4b963",
           "title": "factorialSimple",
           "fullFile": "c:\\data\\training\\module2\\mocha-unit-testing-example\\test\\specs\\factorialSimple.spec.js",
           "file": "\\test\\specs\\factorialSimple.spec.js",
@@ -198,8 +198,8 @@
               "context": null,
               "code": "factorial = new Factorial();\nspy = chai.spy.on(factorial, 'factorialSimple');",
               "err": {},
-              "uuid": "b08d769f-f230-414f-9cba-8b2abd1b2c4d",
-              "parentUUID": "70ab3be3-7580-4ae7-9e8b-22d7efd2e327",
+              "uuid": "d80ec065-526f-48e0-bb36-71457fe2709e",
+              "parentUUID": "f7737ef5-a497-4532-9888-1b3f4ea4b963",
               "isHook": true,
               "skipped": false
             }
@@ -218,8 +218,8 @@
               "context": null,
               "code": "factorial = null;",
               "err": {},
-              "uuid": "ec647833-a86c-4d18-b1b4-3eb6b4661d43",
-              "parentUUID": "70ab3be3-7580-4ae7-9e8b-22d7efd2e327",
+              "uuid": "ffa3f5fd-94fa-479c-ac52-a7674e8c5fd5",
+              "parentUUID": "f7737ef5-a497-4532-9888-1b3f4ea4b963",
               "isHook": true,
               "skipped": false
             }
@@ -238,8 +238,8 @@
               "context": null,
               "code": "expect(factorial.factorialSimple(3)).to.be.equal(6);",
               "err": {},
-              "uuid": "d180c1f6-d203-4654-b378-2c1d81fd50c8",
-              "parentUUID": "70ab3be3-7580-4ae7-9e8b-22d7efd2e327",
+              "uuid": "158edde7-9a01-49c1-84ea-4c6c7b6cd597",
+              "parentUUID": "f7737ef5-a497-4532-9888-1b3f4ea4b963",
               "isHook": false,
               "skipped": false
             },
@@ -256,8 +256,8 @@
               "context": null,
               "code": "expect(factorial.factorialSimple(9)).to.be.equal(362880);",
               "err": {},
-              "uuid": "4c79a818-9fde-42b4-916d-63264fe56c76",
-              "parentUUID": "70ab3be3-7580-4ae7-9e8b-22d7efd2e327",
+              "uuid": "dfb911a6-2a54-49bb-9611-50e4a64011c3",
+              "parentUUID": "f7737ef5-a497-4532-9888-1b3f4ea4b963",
               "isHook": false,
               "skipped": false
             },
@@ -274,8 +274,8 @@
               "context": null,
               "code": "let callWithError = () => factorial.factorialSimple(-1);\nexpect(spy).to.be.a.spy;\nexpect(callWithError).to.throw(`Negative number!`);",
               "err": {},
-              "uuid": "e871b064-afaa-495b-b0f0-2954db74ca9a",
-              "parentUUID": "70ab3be3-7580-4ae7-9e8b-22d7efd2e327",
+              "uuid": "c2a6ee15-3ef1-42d1-8084-88d2b92bb522",
+              "parentUUID": "f7737ef5-a497-4532-9888-1b3f4ea4b963",
               "isHook": false,
               "skipped": false
             },
@@ -283,7 +283,7 @@
               "title": "should be called twice when provided with 2",
               "fullTitle": "factorialSimple should be called twice when provided with 2",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -292,8 +292,8 @@
               "context": null,
               "code": "factorial.factorialSimple(2);\nexpect(spy).to.have.been.called(1);",
               "err": {},
-              "uuid": "a191be27-d685-4966-9908-4de217402c0a",
-              "parentUUID": "70ab3be3-7580-4ae7-9e8b-22d7efd2e327",
+              "uuid": "3c0620bb-dbf4-4483-9b10-e48a3dae29f1",
+              "parentUUID": "f7737ef5-a497-4532-9888-1b3f4ea4b963",
               "isHook": false,
               "skipped": false
             },
@@ -310,24 +310,24 @@
               "context": null,
               "code": "expect(factorial.factorialSimple(1)).to.be.equal(1);",
               "err": {},
-              "uuid": "df8ad61f-2cdd-4804-91c8-34288fa623cb",
-              "parentUUID": "70ab3be3-7580-4ae7-9e8b-22d7efd2e327",
+              "uuid": "26f0efde-e4cd-42e1-855f-32a3b15d24ae",
+              "parentUUID": "f7737ef5-a497-4532-9888-1b3f4ea4b963",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d180c1f6-d203-4654-b378-2c1d81fd50c8",
-            "4c79a818-9fde-42b4-916d-63264fe56c76",
-            "e871b064-afaa-495b-b0f0-2954db74ca9a",
-            "a191be27-d685-4966-9908-4de217402c0a",
-            "df8ad61f-2cdd-4804-91c8-34288fa623cb"
+            "158edde7-9a01-49c1-84ea-4c6c7b6cd597",
+            "dfb911a6-2a54-49bb-9611-50e4a64011c3",
+            "c2a6ee15-3ef1-42d1-8084-88d2b92bb522",
+            "3c0620bb-dbf4-4483-9b10-e48a3dae29f1",
+            "26f0efde-e4cd-42e1-855f-32a3b15d24ae"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 1,
           "root": false,
           "rootEmpty": false,
           "_timeout": 5000
