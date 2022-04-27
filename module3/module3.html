@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arithmetical actions with different types</title>
+</head>
+<body>
+<script>
+    'use strict';
+
+let varStr1 = '100500';
+let varStr2 = '   $superfly$   ';
+
+let varNumber1 = 2.718;
+let varNumber2 = 100500;
+
+let varBoolean1 = true;
+let varBoolean2 = false;
+
+
+//let's execute addition of different type variables :)
+let addStrBool1 = varStr1 + varBoolean1;
+let addStrBool2 = varStr2 + varBoolean2;
+alert (varStr1 + ' + ' + varBoolean1 + ' = ' + addStrBool1);
+alert (`${varStr2} + ${varBoolean2} = ${addStrBool2}`);
+
+let addStrNumb1 = varStr1 + varNumber1;
+let addStrNumb2 = varStr2 + varNumber2;
+alert (`${varStr1} + ${varNumber1} = ${addStrNumb1} \n ${varStr2} + ${varNumber2} = ${addStrNumb2}`);
+
+let addNumbBool1 = varNumber1 + varBoolean1;
+let addNumbBool2 = varNumber2 + varBoolean2;
+alert (`${varNumber1} + ${varBoolean1} = ${addNumbBool1} \n ${varNumber2} + ${varBoolean2} = ${addNumbBool2}`);
+
+
+//let's execute multiplication of different type variables :)
+let multStrBool1 = varStr1 * varBoolean1;
+let multStrBool2 = varStr2 * varBoolean2;
+alert (`${varStr1} * ${varBoolean1} = ${multStrBool1} \n ${varStr2} * ${varBoolean2} = ${multStrBool2}`);
+
+let multStrNumb1 = varStr1 * varNumber1;
+let multStrNumb2 = varStr2 * varNumber2;
+alert (`${varStr1} * ${varNumber1} = ${multStrNumb1} \n ${varStr2} * ${varNumber2} = ${multStrNumb2}`);
+
+let multNumbBool1 = varNumber1 * varBoolean1;
+let multNumbBool2 = varNumber2 * varBoolean2;
+alert (`${varNumber1} * ${varBoolean1} = ${multNumbBool1} \n ${varNumber2} * ${varBoolean2} = ${multNumbBool2}`);
+   
+
+//let's execute division of different type variables :)
+let divStrBool1 = varStr1 / varBoolean1;
+let divStrBool2 = varStr2 / varBoolean2;
+alert (`${varStr1} / ${varBoolean1} = ${divStrBool1} \n ${varStr2} / ${varBoolean2} = ${divStrBool2}`);
+
+let divStrNumb1 = varStr1 / varNumber1;
+let divStrNumb2 = varStr2 / varNumber2;
+alert (`${varStr1} / ${varNumber1} = ${divStrNumb1} \n ${varStr2} / ${varNumber2} = ${divStrNumb2}`);
+
+let divNumbBool1 = varNumber1 / varBoolean1;
+let divNumbBool2 = varNumber2 / varBoolean2;
+alert (`${varNumber1} / ${varBoolean1} = ${divNumbBool1} \n ${varNumber2} / ${varBoolean2} = ${divNumbBool2}`);
+   
+</script>
+</body>
+</html>
