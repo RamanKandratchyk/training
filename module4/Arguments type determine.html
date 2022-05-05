@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Determination of argument type</title>
+</head>
+  <body>
+    <script>
+    'use strict';
+	
+	let userArg1 = 2.718;
+	let userArg2 = '100500';
+	let userArg3 = true;
+	let userArg4 = alert;
+	let userArg5 = null; // :)
+	let userArg6 = undefined; // :)
+	let userArg7 = 123456789n; // :)
+	
+	checkUserArgument(userArg1);
+	checkUserArgument(userArg2);
+	checkUserArgument(userArg3);
+	checkUserArgument(userArg4);
+	checkUserArgument(userArg5);
+	checkUserArgument(userArg6);
+	checkUserArgument(userArg7);
+	
+	
+	function checkUserArgument(arg) {
+	  let typeOfArg = typeof(arg);
+	  console.log( `Type of ${arg} is ${typeOfArg}` );
+	}
+  
+    </script>
+  </body>
+</html>
