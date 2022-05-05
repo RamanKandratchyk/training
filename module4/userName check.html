@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User name check</title>
+</head>
+  <body>
+    <script>
+    'use strict';
+
+	const myName = "Raman";
+	
+	let userName = prompt("Enter yout name, please", '');
+	
+	checkUserName(userName);
+	
+	
+	function checkUserName (name) {
+	  if (name === myName) {
+	    alert( `Hello, ${name}!`);
+	  } else {
+		  alert( 'There is no such name!' );
+	    }
+	}
+  
+    </script>
+  </body>
+</html>
