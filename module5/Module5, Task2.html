@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array to string transformation and inversely</title>
+</head>
+  <body>
+    <script>
+    'use strict';
+	
+	let arrCars = [
+	  "Lamborghini",
+	  "Koenigsegg",
+	  "Ferrari",
+	  "Maserati",
+	  "Porsche",
+	];
+	
+	
+	let carStr = '';
+	
+	for (let i = 0; i < arrCars.length; i++) {
+	  (i < (arrCars.length - 1)) ? (carStr += arrCars[i] + '  ') : (carStr += arrCars[i]);
+	};
+	
+	alert( `Car names string is: \n${carStr}` );
+		
+	let newArrCars = carStr.split('  ');
+	
+	alert( `Car names array is: \n${newArrCars}` );
+		
+    </script>
+  </body>
+</html>
