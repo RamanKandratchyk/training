@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function for index determination by value</title>
+</head>
+  <body>
+    <script>
+    'use strict';
+	
+	let arrNumber = [1, 6, 7, 8, 3, 4, 5, 6];
+	const findNumber1 = 7;
+	const findNumber2 = 564;	
+	
+	findIndex(arrNumber, findNumber1);
+	findIndex(arrNumber, findNumber2);
+		
+	function findIndex(array, value) {
+	  let Index = array.indexOf( value );
+	  Index == (-1) ? alert( `There is no number ${value} in array` ) :
+		alert( `Number ${value} is on ${Index} position in array` );
+	};
+	
+	</script>
+  </body>
+</html>

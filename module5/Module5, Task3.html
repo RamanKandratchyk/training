@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word "Hello" addition to every array element</title>
+</head>
+  <body>
+    <script>
+    'use strict';
+	
+	let arrNames = [
+	  "Alex",
+	  "Pete",
+	  "Raman",
+	  "Maria",
+	  "Kate",
+	];
+	
+	let helloArrNames = arrNames.map (item => `\n` + item + `, hello! `);
+	
+	alert( `New names array is: \n${helloArrNames}` );
+		
+    </script>
+  </body>
+</html>

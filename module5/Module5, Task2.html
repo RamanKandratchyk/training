@@ -16,17 +16,19 @@
 	  "Porsche",
 	];
 	
-	
+	//First way to generate string
 	let carStr = '';
-	
 	for (let i = 0; i < arrCars.length; i++) {
 	  (i < (arrCars.length - 1)) ? (carStr += arrCars[i] + '  ') : (carStr += arrCars[i]);
 	};
+	alert( `(First way) Car names string is: \n${carStr}` );
 	
-	alert( `Car names string is: \n${carStr}` );
-		
+	//Second way to generate string
+	let carStr1 = arrCars.join(' ');
+	alert( `(Second way) Car names string is: \n${carStr1}` );
+	
+	//Generate new array
 	let newArrCars = carStr.split('  ');
-	
 	alert( `Car names array is: \n${newArrCars}` );
 		
     </script>
