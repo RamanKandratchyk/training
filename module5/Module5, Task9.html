@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Console prime numbers output</title>
+</head>
+  <body>
+    <script>
+    'use strict';
+
+	let a = prompt('Enter your range, from');
+	let b = prompt('to');
+	
+	for (a; a <= b; a++) {
+	  Prime(a) ? console.log(a) : false;
+	};
+	
+	
+	function Prime(n) {
+	  for (let i = 2; i < Math.sqrt(n); i++) {
+		if ( n % i == 0) return false;
+	  }
+	  return true;
+	}
+		
+	</script>
+  </body>
+</html>

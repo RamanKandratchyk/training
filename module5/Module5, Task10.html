@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Console odd numbers output</title>
+</head>
+  <body>
+    <script>
+    'use strict';
+
+	let a = prompt('Enter your range, from');
+	let b = prompt('to');
+	
+	for (a; a <= b; a++) {
+	  checkOddNumber(a) ? console.log(a) : false;
+	};
+	
+	
+	function checkOddNumber(n) {
+	  let result = ( n % 2 == 0) ? false : true;
+	  return result;
+	}
+		
+	</script>
+  </body>
+</html>
