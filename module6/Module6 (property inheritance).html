@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property inheritance</title>
+</head>
+  <body>
+    <script>
+    'use strict';
+
+	let animal = {};
+	let cat = {};
+		
+	animal.move = true;
+	
+	Object.setPrototypeOf(cat, animal);
+	
+	alert(cat.move);
+	
+	</script>
+  </body>
+</html>
