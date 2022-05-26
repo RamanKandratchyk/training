@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find matches in given string</title>
+</head>
+  <body>
+    <script>
+    'use strict';
+
+	let str = 'ahb acb aeb aeeb adcb axeb';
+	
+	let result = str.match(/a\wb/g);
+	
+	alert(`Number of matches: ${result.length}`);
+	
+	let posMatch = '';
+	for (let i = 0; i <= result.length - 1; i++) {
+	  (i != result.length - 1) ? (posMatch += result[i] + ' ') : (posMatch += result[i]);
+	};
+
+	alert(`Next matches "${posMatch}" were found in initial string "${str}"`);
+	
+	</script>
+  </body>
+</html>
